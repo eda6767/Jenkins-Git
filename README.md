@@ -10,6 +10,7 @@
 
 <sub/>
 
+<br/> 
 
 Based on documentation on the website : https://docs.gitlab.com/ee/install/docker.html#install-gitlab-using-docker-compose  we are gonna extend docker-compose.yml
 <br/> 
