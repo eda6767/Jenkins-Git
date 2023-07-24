@@ -12,6 +12,7 @@ file:
 
 ```
 git:
+    container_name: git-server
     image: 'gitlab/gitlab-ee:latest'
     hostname: 'gitlab.example.com'
     ports:
