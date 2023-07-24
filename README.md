@@ -23,3 +23,9 @@ git:
       - '$GITLAB_HOME/data:/var/opt/gitlab'
 ```
 
+Then, we can create new service:
+
+```
+docker-compose up -d
+docker ps
+```
