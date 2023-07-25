@@ -39,3 +39,21 @@ Next step is to create group and projekt on gitlab https://gitlab.com/
 <p align="center">
 <img width="400" alt="Zrzut ekranu 2023-07-25 o 14 33 36" src="https://github.com/eda6767/Jenkins-Git/assets/102791467/c3e156d1-b963-4e14-9581-f58ae4271e8d">
 </p>
+
+
+
+Let's go into our virtual machine. If command git doesn't work, install git:
+
+```
+git --version
+git clone https://github.com/jenkins-docs/simple-java-maven-app.git
+ls simple-java-maven-app
+```
+
+Next, clone the new project in git:
+
+```
+git clone https://gitlab.com/jenkins4982930/maven.git
+cd maven
+cp -r ../simple-java-maven-app/* .
+```
