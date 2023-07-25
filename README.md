@@ -57,3 +57,11 @@ git clone https://gitlab.com/jenkins4982930/maven.git
 cd maven
 cp -r ../simple-java-maven-app/* .
 ```
+
+
+```
+git add .
+git status
+git commit -m "Adds maven files"
+git push -uf origin main
+```
