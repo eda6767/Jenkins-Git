@@ -36,3 +36,8 @@ Then, we can create new service:
 docker-compose up -d
 docker ps
 ```
+
+Next step is to create group and projekt on gitlab https://gitlab.com/ 
+
+<img width="650" alt="Zrzut ekranu 2023-07-25 o 14 33 36" src="https://github.com/eda6767/Jenkins-Git/assets/102791467/c3e156d1-b963-4e14-9581-f58ae4271e8d">
+
