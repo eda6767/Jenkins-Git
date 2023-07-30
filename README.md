@@ -172,3 +172,18 @@ cat job.j2
 <img width="650" alt="Zrzut ekranu 2023-07-30 o 19 26 47" src="https://github.com/eda6767/Jenkins-Git/assets/102791467/dca776f3-6eeb-48c2-8e9b-de0ca2e335df">
 </p>
 
+
+We can also create jobs with description and parameters:
+
+```
+job('job_dsl_example') {
+
+description('This is my first job')
+
+parameters {
+    stringParam('Planet', defaultValue='world', description='This is the world')
+    booleanParam('FLAG', 'true')
+    choiceParam('OPTION', ['option1 (default)', 'option2', 'option3'])
+}
+}
+```
