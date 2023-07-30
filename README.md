@@ -120,3 +120,16 @@ curl -u "jenkins:1234" -H $crumb -X POST http://jenkins:8080/job/maven-job/build
 chmod +x post-receive
 chown git:git custom_hooks/ -R
 ```
+
+
+```
+cd maven
+cat git/.config
+```
+<p align="center">
+  
+<img width="529" alt="Zrzut ekranu 2023-07-30 o 19 02 10" src="https://github.com/eda6767/Jenkins-Git/assets/102791467/8052e3a0-f51e-4b97-9c9f-f6bb22bdd488">
+
+</p>
+
+
