@@ -189,7 +189,7 @@ parameters {
 ```
 
 
-#### SCM
+#### SCM, triggers, steps
 
 SCM point on the repository, where our code is located.
 
@@ -201,12 +201,18 @@ description('This is my first job')
 parameters {
     stringParam('Planet', defaultValue='world', description='This is the world')
     booleanParam('FLAG', 'true')
-    choiceParam('OPTION', ['option1 (default)', 'option2', 'option3'])
+    choiceParam('OPTION', ['option1 (default)', 'option2', 'option3']) }
 
 
 scm {
     git('https://github.com/jenkins-docs/simple-java-maben-app', 'master')
 }
+triggers {
+      cron('H 5 * * 7')
+}
+
+steps {
+    shell("echo 'Hello world' ")
 }
 }
 ```
