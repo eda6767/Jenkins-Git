@@ -89,3 +89,28 @@ Then, we can create job: called maven-job and add git repository as source for t
 ### Git Hooks 
 
 Git hooks works like a trigger - whenever a developer pushes to master branch - we could trigger a script.
+
+```
+cd /var/opt/gitlab/git-data/repositories/jenkins/maven.git/
+mkdir custom_hooks
+cd custom_hooks
+```
+
+```
+if ! [ -t 0 ]; then
+  read -a ref
+fi
+IFS='/' read -ra REF << "${ref[2]}"
+branch="${REF[2]}"
+
+if [ $branch == "master"]; then
+crumb=$(curl -u "jenkins:1234" -s http://jenkins:8080/crumbIssuer/api/xml?path=concat(//crumbRequestField,":",//crumb)')
+curl -u "jenkins:1234" -H $crumb -X POST http://jenkins:8080/job/maven-job/build?delay=0sec
+
+  if [ $? -eq 0]; then
+    echo " *** ok"
+  else
+    echo " *** Error"
+  fi
+ fi
+```
