@@ -1,4 +1,4 @@
-# Jenkins-Git
+# Jenkins-Git & DSL
 
 ### Install Gitlab using Docker Compose 
 
@@ -145,5 +145,17 @@ git add src/
 git commit -m "Test git hook trigger"
 git push origin master
 ```
+
+
+
+### Jenkins & DSL
+
+DSL lets you create jobs using code instead of Jenkins' console. To use this we nedd to install plugins.
+
+<p align="center">
+<img width="650" alt="Zrzut ekranu 2023-07-30 o 19 13 45" src="https://github.com/eda6767/Jenkins-Git/assets/102791467/3d43cf84-30f8-4c9d-96eb-84b2d0038b03">
+</p>
+
+
 
 
