@@ -165,7 +165,10 @@ nano job.j2
 cat job.j2
 ```
 
-<p align="center">
+
 <img width="435" alt="Zrzut ekranu 2023-07-30 o 19 23 49" src="https://github.com/eda6767/Jenkins-Git/assets/102791467/9168ca10-733b-4847-aeee-dc24d1381898">
+
+<p align="center">
+<img width="650" alt="Zrzut ekranu 2023-07-30 o 19 26 47" src="https://github.com/eda6767/Jenkins-Git/assets/102791467/dca776f3-6eeb-48c2-8e9b-de0ca2e335df">
 </p>
 
