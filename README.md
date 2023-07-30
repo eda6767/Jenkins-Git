@@ -16,9 +16,9 @@ Based on documentation on the website : https://docs.gitlab.com/ee/install/docke
 file:
 
 ```
-git:
+  git:
     container_name: git-server
-    image: 'gitlab/gitlab-ee:latest'
+    image: 'gitlab/gitlab-ce:latest'
     hostname: 'gitlab.example.com'
     ports:
       - '8090:80'
@@ -26,6 +26,8 @@ git:
       - '$GITLAB_HOME/config:/etc/gitlab'
       - '$GITLAB_HOME/logs:/var/log/gitlab'
       - '$GITLAB_HOME/data:/var/opt/gitlab'
+    networks:
+      - net
 ```
 
 Then, we can create new service:
