@@ -94,6 +94,7 @@ Git hooks works like a trigger - whenever a developer pushes to master branch - 
 cd /var/opt/gitlab/git-data/repositories/jenkins/maven.git/
 mkdir custom_hooks
 cd custom_hooks
+vi post-receive
 ```
 
 ```
