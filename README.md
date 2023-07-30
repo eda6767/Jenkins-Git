@@ -118,4 +118,5 @@ curl -u "jenkins:1234" -H $crumb -X POST http://jenkins:8080/job/maven-job/build
 
 ```
 chmod +x post-receive
+chown git:git custom_hooks/ -R
 ```
