@@ -85,3 +85,7 @@ Then, we can create job: called maven-job and add git repository as source for t
 <img width="650" alt="Zrzut ekranu 2023-07-30 o 17 03 10" src="https://github.com/eda6767/Jenkins-Git/assets/102791467/e1365bc7-7d54-45fa-8836-b29fb707172c">
 </p>
 
+
+### Git Hooks 
+
+Git hooks works like a trigger - whenever a developer pushes to master branch - we could trigger a script.
