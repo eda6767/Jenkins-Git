@@ -66,3 +66,8 @@ git status
 git commit -m "Adds maven files"
 git push -uf origin main
 ```
+
+
+### Integrate Git server to your maven job
+
+
