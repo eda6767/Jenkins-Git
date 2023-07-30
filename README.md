@@ -284,3 +284,6 @@ curl -u "jenkins:1234" -H $crumb -X POST http://jenkins:8080/job/dsl-job/build?d
 ```
 chown git:git custom_hooks/ -R
 ```
+
+
+After creating hooks, we can change code in jobs file - push changes to repository and dsl-job on Jenkins should work.
