@@ -70,4 +70,8 @@ git push -uf origin main
 
 ### Integrate Git server to your maven job
 
+Add new credentials: 
+
+<img width="650" alt="Zrzut ekranu 2023-07-30 o 16 28 13" src="https://github.com/eda6767/Jenkins-Git/assets/102791467/3f5f8ff6-4af7-4143-af23-d6ee30ab0e18">
+
 
