@@ -189,7 +189,7 @@ parameters {
 ```
 
 
-#### SCM, triggers, steps
+#### SCM, triggers, steps, mailer
 
 SCM point on the repository, where our code is located.
 
@@ -217,6 +217,10 @@ steps {
           echo 'Running script'
           /tmp/script.sh
           """)
+}
+
+publishers {
+        mailer('me@example.com', true, true)
 }
 }
 ```
