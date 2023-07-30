@@ -31,6 +31,7 @@ git:
 Then, we can create new service:
 
 ```
+export GITLAB_HOME=$HOME/gitlab
 docker-compose up -d
 docker ps
 ```
