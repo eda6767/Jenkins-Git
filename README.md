@@ -251,3 +251,36 @@ git add job
 git commit -m "DSL jobs"
 git push -uf origin main
 ```
+
+Next, we need to create Git Hook:
+
+```
+docker exec -ti git-server bash
+cd /var/opt/gitlab/git-data/repositories/jenkins/dsl-job.git/
+mkdir custom_hooks
+cd custom_hooks
+vi post_receive
+```
+
+```
+if ! [ -t 0 ]; then
+  read -a ref
+fi
+IFS='/' read -ra REF << "${ref[2]}"
+branch="${REF[2]}"
+
+if [ $branch == "master"]; then
+crumb=$(curl -u "jenkins:1234" -s http://jenkins:8080/crumbIssuer/api/xml?path=concat(//crumbRequestField,":",//crumb)')
+curl -u "jenkins:1234" -H $crumb -X POST http://jenkins:8080/job/dsl-job/build?delay=0sec
+
+  if [ $? -eq 0]; then
+    echo " *** ok"
+  else
+    echo " *** Error"
+  fi
+ fi
+```
+
+```
+chown git:git custom_hooks/ -R
+```
