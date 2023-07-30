@@ -157,5 +157,15 @@ DSL lets you create jobs using code instead of Jenkins' console. To use this we 
 </p>
 
 
+Next you have to create a seed job, and in jenkins container create dsl folder with a first job file:
 
+```
+mkdir dsl
+nano job.j2
+cat job.j2
+```
+
+<p align="center">
+<img width="435" alt="Zrzut ekranu 2023-07-30 o 19 23 49" src="https://github.com/eda6767/Jenkins-Git/assets/102791467/9168ca10-733b-4847-aeee-dc24d1381898">
+</p>
 
