@@ -133,3 +133,17 @@ cat git/.config
 </p>
 
 
+Now, we can modify some file in maven folder:
+
+<p align="center">
+<img width="550" alt="Zrzut ekranu 2023-07-30 o 19 06 32" src="https://github.com/eda6767/Jenkins-Git/assets/102791467/b20b6b6d-9d3f-4304-a459-41763d5d53d2">
+</p>
+
+```
+git status
+git add src/
+git commit -m "Test git hook trigger"
+git push origin master
+```
+
+
