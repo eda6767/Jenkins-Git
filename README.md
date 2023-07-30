@@ -212,7 +212,11 @@ triggers {
 }
 
 steps {
-    shell("echo 'Hello world' ")
+    shell("""
+          echo 'Hello world'
+          echo 'Running script'
+          /tmp/script.sh
+          """)
 }
 }
 ```
