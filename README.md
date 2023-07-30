@@ -72,6 +72,14 @@ git push -uf origin main
 
 Add new credentials: 
 
+<p align="center">
 <img width="650" alt="Zrzut ekranu 2023-07-30 o 16 28 13" src="https://github.com/eda6767/Jenkins-Git/assets/102791467/3f5f8ff6-4af7-4143-af23-d6ee30ab0e18">
+</p>
 
+
+Then, we can create job: called maven-job and add git repository as source for the code.
+
+<p align="center">
+<img width="650" alt="Zrzut ekranu 2023-07-30 o 17 03 10" src="https://github.com/eda6767/Jenkins-Git/assets/102791467/e1365bc7-7d54-45fa-8836-b29fb707172c">
+</p>
 
