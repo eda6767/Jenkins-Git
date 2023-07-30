@@ -143,7 +143,7 @@ Now, we can modify some file in maven folder:
 git status
 git add src/
 git commit -m "Test git hook trigger"
-git push origin master
+git push -uf origin main
 ```
 
 
@@ -249,5 +249,5 @@ vi jobs
 git status
 git add job
 git commit -m "DSL jobs"
-git push origin master
+git push -uf origin main
 ```
