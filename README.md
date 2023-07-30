@@ -115,3 +115,7 @@ curl -u "jenkins:1234" -H $crumb -X POST http://jenkins:8080/job/maven-job/build
   fi
  fi
 ```
+
+```
+chmod +x post-receive
+```
