@@ -228,12 +228,18 @@ publishers {
 
 #### Versioning your DSL code using GIT
 
+<br/> 
+
 Lets create a new project called dsl-job
+
+<br/> 
+
 
 <p align="center">
 <img width="650" alt="Zrzut ekranu 2023-07-30 o 20 18 16" src="https://github.com/eda6767/Jenkins-Git/assets/102791467/b6134864-feda-4ce1-a24f-b325720fa2d0">
 </p>
 
+<br/> 
 
 Next, let's clone git repository on our jenkins container.
 
