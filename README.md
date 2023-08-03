@@ -287,3 +287,43 @@ chown git:git custom_hooks/ -R
 
 
 After creating hooks, we can change code in jobs file - push changes to repository and dsl-job on Jenkins should work.
+
+
+## Pipeline
+
+```
+mkdir pipeline
+cd pipeline
+nano first_pipeline
+```
+
+
+```
+pipeline {
+  agent any 
+    stages {
+      stage('Deploy') {
+        steps {
+          retry(3) {
+            sh 'echo Hello'
+          }
+          timeout(time: 3, unit: 'SECONDS') {
+                sh 'sleep 5' }
+              }
+            }
+        }
+  }
+
+```
+
+<p align="center">
+<img width="650" alt="Zrzut ekranu 2023-08-3 o 22 10 17" src="https://github.com/eda6767/Jenkins-Git/assets/102791467/e9f386da-d6ea-4202-a88f-e2a7c7655aab">
+</p>
+
+
+<p align="center">
+<img width="577" alt="Zrzut ekranu 2023-08-3 o 22 12 56" src="https://github.com/eda6767/Jenkins-Git/assets/102791467/6cb29ac4-dd31-4418-bc87-b759001b6564">
+
+</p>
+
+
