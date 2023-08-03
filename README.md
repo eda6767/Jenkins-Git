@@ -1,4 +1,4 @@
-# Jenkins-Git & DSL
+# Jenkins-Git & DSL & Pipelines
 
 ### Install Gitlab using Docker Compose 
 
