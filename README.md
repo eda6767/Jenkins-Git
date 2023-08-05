@@ -349,3 +349,15 @@ vi Dockerfile
 </p>
 
 
+```
+docker-compose build
+docker images | grep docker
+docker-compose up -d
+docker stop git-server
+sudo chown 1000:1000 /var/run/docker.sock
+docker exec -ti jenkins bash
+docker ps
+```
+
+
+
