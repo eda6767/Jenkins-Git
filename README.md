@@ -338,5 +338,12 @@ cd pipeline
 vi Dockerfile
 ```
 
-<img width="650" alt="Zrzut ekranu 2023-08-5 o 10 28 56" src="https://github.com/eda6767/Jenkins-Git/assets/102791467/da505583-2cc3-471b-b586-59bc173ce369">
+<p align="center">
+<img width="800" alt="Zrzut ekranu 2023-08-5 o 10 28 56" src="https://github.com/eda6767/Jenkins-Git/assets/102791467/da505583-2cc3-471b-b586-59bc173ce369">
+</p>
+
+
+<img width="726" alt="Zrzut ekranu 2023-08-5 o 10 32 02" src="https://github.com/eda6767/Jenkins-Git/assets/102791467/8b261c57-580e-40fe-88e8-33fe5956afec">
+
+
 
