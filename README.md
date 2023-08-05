@@ -359,5 +359,17 @@ docker exec -ti jenkins bash
 docker ps
 ```
 
+```
+nano Jenkinsfile
+```
+<p align="center">
+<img width="650" alt="Zrzut ekranu 2023-08-5 o 19 15 04" src="https://github.com/eda6767/Jenkins-Git/assets/102791467/4559388d-0294-41fb-9884-485a306ac174">
+</p>
 
+```
+cp -r simple-java-maven-app pipeline/java-app
+cd ..
+cd pipeline
+mkdir jenkins/build
+```
 
