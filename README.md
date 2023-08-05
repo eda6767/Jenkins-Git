@@ -327,3 +327,14 @@ pipeline {
 </p>
 
 
+Next, we would like to install docker container inside the docker container.
+
+
+```
+docker stop git-server
+docker ps
+mkdir pipeline
+cd pipeline
+vi Dockerfile
+```
+
